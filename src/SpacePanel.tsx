@@ -1,7 +1,7 @@
 
-export function SpacePanel() {
+export function SpacePanel(props: any) {
   return (<div className="panel">
-    This is a panel
+    {props.title} | {props.description}
   </div>
   );
 }

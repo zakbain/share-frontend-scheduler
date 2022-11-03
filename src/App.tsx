@@ -12,7 +12,7 @@ function App() {
           Frontend web client for customers to search, view, and reserve spaces.
         </p>
         <ul>
-          <li><SpacePanel></SpacePanel></li>
+          <li><SpacePanel title='Home' description='My house'></SpacePanel></li>
         </ul>
       </header>
     </div>
