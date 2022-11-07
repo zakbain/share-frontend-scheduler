@@ -9,3 +9,7 @@ Powered by React (https://reactjs.org/)
 ### `yarn start`
 ### `yarn test`
 ### `yarn build`
+
+## External Dependencies
+Checkout and run share-schedule-service locally (branch main)
+https://github.com/zakbain/share-schedule-service - see README
