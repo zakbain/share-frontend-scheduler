@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SpacePanel } from './SpacePanel';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <p>
           Frontend web client for customers to search, view, and reserve spaces.
         </p>
+        <ul>
+          <li><SpacePanel title='Home' description='My house'></SpacePanel></li>
+        </ul>
       </header>
     </div>
   );
