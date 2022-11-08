@@ -22,8 +22,6 @@ function App() {
 
     const spaceMap = new Map(spaceItems.map((obj: any) => [obj._id, obj]))
 
-    console.log(spaceMap)
-
     const spaceAvailabilities = availabilityItems.map((avail: any) => {
       const space = spaceMap.get(avail.space) as any
       return { ...avail, title: space ? space.title : '', description: space ? space.description : '' }
