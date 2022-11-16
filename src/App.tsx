@@ -4,8 +4,9 @@ import './App.css';
 import { SpacePanel } from './SpacePanel';
 
 function App() {
-  const availabilitiesUrl = 'http://localhost:3001/availabilities'
-  const spacesUrl = 'http://localhost:3001/spaces'
+  const scheduleServiceUrl = process.env.REACT_APP_SCHEDULE_SERVICE_URL 
+  const availabilitiesUrl = `${scheduleServiceUrl}/${process.env.REACT_APP_SCHEDULE_SERVICE_AVAILABILITIES_PATH}`
+  const spacesUrl = `${scheduleServiceUrl}/${process.env.REACT_APP_SCHEDULE_SERVICE_SPACES_PATH}`
   const [spaces, setSpaces] = useState<any>([])
 
   useEffect(() => {
